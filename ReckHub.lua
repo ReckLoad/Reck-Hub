@@ -1,7 +1,5 @@
-
  -- █▀█ █▀▀ █▀▀ █▄▀   █▄█ █ █ █▄▄ 
  -- █▀▄ ██▄ █▄▄ █ █   █ █ █▄█ █▄█ 
-
 
 local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
 
@@ -16,7 +14,7 @@ local Window = Rayfield:CreateWindow({
    },
    Discord = {
       Enabled = True,
-      Invite = "XQdN82zC4c", 
+      Invite = "x6MgxWsaTw", 
       RememberJoins = true 
    },
    KeySystem = True, 
@@ -24,8 +22,8 @@ local Window = Rayfield:CreateWindow({
       Title = "Reck hub | Key",
       Subtitle = "Key in Discord",
       Note = "Join server for the key",
-      FileName = "Key", 
-      SaveKey = true, 
+      FileName = "ReckHubKey", 
+      SaveKey = false, 
       GrabKeyFromSite = false, 
       Key = {"ReckHub2024"} 
    }
@@ -59,21 +57,8 @@ local Button = MainTab:CreateButton({
    end,
 })
 
-local Slider = Tab:CreateSlider({
-   Name = "Walkspeed",
-   Range = {0, 100},
-   Increment = 1,
-   Suffix = "Speed",
-   CurrentValue = 16,
-   Flag = "WalkspeedSlider", 
-   Callback = function(Value)
-        game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = (Value)
-   end,
-})
-
  -- █▀█ ▀█▀ █ █ ▄▀▄ █   █▀▀ 
  -- █▀▄ ▄█▄ ▀▄▀ █▀█ █▄▄ ▄██ 
-
 
 local RivalsTab = Window:CreateTab("Rivals", nil) 
 local RivalsSection = RivalsTab:CreateSection("Rivals")
